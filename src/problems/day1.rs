@@ -66,7 +66,10 @@ pub fn solve(data: &str, dial_start: i64) -> i64 {
             };
 
             Some(*acc)
-        }).last().unwrap().1 as i64
+        })
+        .last()
+        .unwrap()
+        .1 as i64
 }
 
 pub fn part2(data: &str) -> i64 {
@@ -91,7 +94,6 @@ R14
 L82";
         assert_eq!(part1(data), 3);
     }
-
 
     #[test]
     fn part2_works() {
